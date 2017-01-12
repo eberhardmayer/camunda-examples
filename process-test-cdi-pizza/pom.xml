@@ -29,13 +29,6 @@
 				<scope>import</scope>
 				<type>pom</type>
 			</dependency>
-			<dependency>
-				<groupId>org.camunda.bpm.dmn</groupId>
-				<artifactId>camunda-engine-dmn-bom</artifactId>
-				<version>${camunda.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -55,12 +48,6 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<!-- decision engine -->
-			<groupId>org.camunda.bpm.dmn</groupId>
-			<artifactId>camunda-engine-dmn</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
 			<!-- client for Java EE application server integration, included in WAR 
 				as an alternative to write your own ProcessApplication class -->
 			<groupId>org.camunda.bpm.javaee</groupId>
@@ -73,28 +60,11 @@
 			<artifactId>camunda-engine-cdi</artifactId>
 		</dependency>
 
-		<!-- Required to use Spin dataformat support in unit tests -->
 		<dependency>
-			<groupId>org.camunda.spin</groupId>
-			<artifactId>camunda-spin-dataformat-all</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.camunda.bpm</groupId>
-			<artifactId>camunda-engine-plugin-spin</artifactId>
-			<scope>provided</scope>
-		</dependency>
-
-		<!-- Required to use Connectors in unit tests -->
-		<dependency>
-			<groupId>org.camunda.connect</groupId>
-			<artifactId>camunda-connect-connectors-all</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.camunda.bpm</groupId>
-			<artifactId>camunda-engine-plugin-connect</artifactId>
-			<scope>provided</scope>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
 		</dependency>
 
 		<dependency>
@@ -102,13 +72,6 @@
 			<groupId>org.camunda.bpm.extension</groupId>
 			<artifactId>camunda-bpm-assert</artifactId>
 			<version>1.2</version>
-			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
 
