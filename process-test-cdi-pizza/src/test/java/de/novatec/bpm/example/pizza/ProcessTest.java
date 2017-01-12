@@ -1,4 +1,4 @@
-package de.novatec.bpm.example.pizza.processtest;
+package de.novatec.bpm.example.pizza;
 
 import static org.camunda.bpm.engine.test.assertions.ProcessEngineAssertions.assertThat;
 import static org.camunda.bpm.engine.test.assertions.ProcessEngineTests.complete;
@@ -15,9 +15,6 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-/**
- * Test case starting an in-memory database-backed Process Engine.
- */
 @RunWith(CdiTestRunner.class)
 public class ProcessTest {
 
@@ -26,10 +23,6 @@ public class ProcessTest {
 	public static ProcessEngineRule processEngineRule = TestCoverageProcessEngineRuleBuilder.create().build();
 
 	private static final String PROCESS_DEFINITION_KEY = "pizza";
-
-	/**
-	 * Just tests if the process definition is deployable.
-	 */
 
 	@Test
 	@Deployment(resources = "process.bpmn")

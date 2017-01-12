@@ -7,7 +7,7 @@
 		class="org.camunda.bpm.extension.process_test_coverage.junit.rules.ProcessCoverageInMemProcessEngineConfiguration">
 		<property name="history" value="full" />
 		<property name="expressionManager">
-			<bean class="de.novatec.bpm.example.pizza.processtest.MockExpressionManager" />
+			<bean class="de.novatec.bpm.example.pizza.MockExpressionManager" />
 		</property>
 		<property name="processEnginePlugins">
 			<list>

@@ -1,4 +1,4 @@
-package de.novatec.bpm.example.pizza.processtest.mock;
+package de.novatec.bpm.example.pizza;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;

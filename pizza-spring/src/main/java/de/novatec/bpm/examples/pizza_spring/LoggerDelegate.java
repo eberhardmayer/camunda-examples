@@ -1,19 +1,16 @@
-package de.novatec.bpm.example.pizza;
+package de.novatec.bpm.examples.pizza_spring;
 
 import java.util.logging.Logger;
 
-import javax.inject.Inject;
-import javax.inject.Named;
-
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
+import org.springframework.beans.factory.annotation.Autowired;
 
-@Named
 public class LoggerDelegate implements JavaDelegate {
 
 	private final Logger LOGGER = Logger.getLogger(LoggerDelegate.class.getName());
 
-	@Inject
+	@Autowired
 	private ServiceCall serviceCall;
 
 	public void execute(DelegateExecution execution) throws Exception {

@@ -1,4 +1,4 @@
-package de.novatec.bpm.example.pizza.processtest;
+package de.novatec.bpm.example.pizza;
 
 import org.apache.deltaspike.core.api.provider.BeanProvider;
 import org.camunda.bpm.engine.impl.el.ExpressionManager;
