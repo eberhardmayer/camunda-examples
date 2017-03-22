@@ -9,12 +9,6 @@
 		<property name="expressionManager">
 			<bean class="de.novatec.bpm.example.pizza.MockExpressionManager" />
 		</property>
-		<property name="processEnginePlugins">
-			<list>
-				<bean class="org.camunda.spin.plugin.impl.SpinProcessEnginePlugin" />
-				<bean class="org.camunda.connect.plugin.impl.ConnectProcessEnginePlugin" />
-			</list>
-		</property>
 	</bean>
 	
 </beans>

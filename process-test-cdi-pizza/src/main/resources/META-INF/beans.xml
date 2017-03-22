@@ -1,0 +1,4 @@
+
+<interceptors>
+	<class>de.novatec.bpm.example.pizza.interceptor.LoggingInterceptor</class>
+</interceptors>

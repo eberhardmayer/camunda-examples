@@ -8,6 +8,8 @@ import javax.inject.Named;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
 
+import de.novatec.bpm.example.pizza.interceptor.Log;
+
 @Named
 public class LoggerDelegate implements JavaDelegate {
 
@@ -16,6 +18,7 @@ public class LoggerDelegate implements JavaDelegate {
 	@Inject
 	private ServiceCall serviceCall;
 
+	@Log
 	public void execute(DelegateExecution execution) throws Exception {
 
 		LOGGER.info("\n\n  ... LoggerDelegate invoked by " + "processDefinitionId=" + execution.getProcessDefinitionId()
