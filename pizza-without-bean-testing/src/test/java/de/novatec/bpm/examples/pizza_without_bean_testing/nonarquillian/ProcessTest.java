@@ -1,11 +1,10 @@
 package de.novatec.bpm.examples.pizza_without_bean_testing.nonarquillian;
 
 import static org.camunda.bpm.engine.test.assertions.ProcessEngineAssertions.assertThat;
-import static org.mockito.Matchers.*;
-import static org.mockito.Mockito.when;
 import static org.camunda.bpm.engine.test.assertions.ProcessEngineTests.complete;
 import static org.camunda.bpm.engine.test.assertions.ProcessEngineTests.task;
 import static org.camunda.bpm.engine.test.assertions.ProcessEngineTests.withVariables;
+import static org.mockito.Mockito.when;
 
 import org.camunda.bpm.engine.runtime.ProcessInstance;
 import org.camunda.bpm.engine.test.Deployment;
