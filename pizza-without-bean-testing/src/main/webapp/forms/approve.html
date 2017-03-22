@@ -1,0 +1,20 @@
+<form role="form" name="form">
+	<div class="form-group">
+		<label for="customerId-field">Customer Name</label> <input
+			id="customerId-field" disabled="disabled"
+			cam-variable-name="customerName" cam-variable-type="String"
+			class="form-control" />
+	</div>
+	<div class="form-group">
+		<label for="pizzaType">Pizza Type</label> <input id="pizzaType"
+			disabled="disabled" cam-variable-name="pizzaType"
+			cam-variable-type="String" class="form-control" />
+	</div>
+	<div class="form-group">
+		<label for="approved">Approved?</label> <select id="approved" required
+			cam-variable-name="approved" cam-variable-type="Boolean">
+			<option value="true">Yes</option>
+			<option value="false">No</option>
+		</select>
+	</div>
+</form>
